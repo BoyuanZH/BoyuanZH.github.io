@@ -6,7 +6,7 @@ email: boyuanz@hotmail.com
 description: ""
 keyword: ""
 url: "https://boyuanzh.github.io/"              # your host, for absolute URL
-baseurl: "https://boyuanzh.github.io/blog"         # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
