@@ -59,3 +59,6 @@ private TreeNode deserial(Queue<String> q) {
     return root;
 }
 ```
+
+5. [114. Flatten Binary Tree to Linked List] (https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/) (The disscussion of first solution is super helpful!)
+6. [230. Kth Smallest Element in a BST] (https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/) (Recursive | Iterative | Binary Search)
