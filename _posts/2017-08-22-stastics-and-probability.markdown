@@ -2,7 +2,7 @@
 layout:     post
 title:      "Probability and Statistics: A Nice Open Course"
 subtitle:   " \"Take your time for machine learning.\""
-date:       2017-08-12 12:00:00
+date:       2017-08-22 12:00:00
 author:     "BoyuanZH"
 header-img: "img/post-bg-2015.jpg"
 tags:
