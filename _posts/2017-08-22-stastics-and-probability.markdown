@@ -19,6 +19,6 @@ This course is systematically organised with quite a lot insightful and practica
 
 Very helpful and insightful course. Strong recommendation.
 
-<img class="shadow" width="320" src="/img/in-post/2018-08-22/2018-08-22-variable-relationship-table.jpg" />
+<img class="shadow" width="500" src="/img/in-post/2018-08-22/2018-08-22-variable-relationship-table.jpg" />
 <small class="img-hint">A summary table from the last lecture illustrating four types of variable relationships. </small>
 
