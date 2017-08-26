@@ -13,6 +13,7 @@ tags:
 
 ## Knapsack Problem
 
+
 Knapsack Problem is a classic dynamical programming problem. Check out this [coursera tutorial](https://www.coursera.org/learn/algorithms-greedy/lecture/LIgLJ/the-knapsack-problem) for detail explanation.
 
 >Related Problems:
