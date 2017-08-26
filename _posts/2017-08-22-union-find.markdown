@@ -11,7 +11,7 @@ tags:
     - Study Notes
 ---
 
-##Union Find
+## Union Find
 
 *Union find is a very important algorithm in dealing with network connectivity. Before diving into the detailed problem, it will be helpful to check out [this material from Princeton](https://www.cs.princeton.edu/~rs/AlgsDS07/01UnionFind.pdf)*
 

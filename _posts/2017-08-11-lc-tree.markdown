@@ -1,4 +1,4 @@
-# How to manipulate tree structure?
+## How to manipulate tree structure?
 ```
 def connect(self, root):
     while (not root == None):
