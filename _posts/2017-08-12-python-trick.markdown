@@ -3,7 +3,7 @@ layout:     post
 title:      "Python Tricks"
 date:       2017-08-12 12:00:00
 author:     "BoyuanZH"
-header-img: "img/home-bg1.jpg"
+header-img: "img/post-bg.jpg"
 tags:
     - Language
 ---

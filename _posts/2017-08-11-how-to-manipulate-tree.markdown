@@ -3,7 +3,7 @@ layout:     post
 title:      "How to manipulate tree structure?"
 date:       2017-08-12
 author:     "BoyuanZH"
-header-img: "img/home-bg1.jpg"
+header-img: "img/post-bg.jpg"
 tags:
     - LeetCode
 ---
