@@ -4,7 +4,7 @@ title:      "Algorithm: Majority Voting Problem"
 subtitle:   "Like a Dynamical Programming"
 date:       2017-08-28
 author:     "BoyuanZH"
-header-img: "img/post-bg.jpg"
+header-img: "img/post-bg-building.jpg"
 tags:
     - Leetcode
     - Algorithm
