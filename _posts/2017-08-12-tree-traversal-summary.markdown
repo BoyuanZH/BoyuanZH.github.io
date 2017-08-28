@@ -28,27 +28,27 @@ tags:
 2. [106. Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/description/)
 3. [Construct BT from Inorder and Levelorder traversal](http://www.geeksforgeeks.org/construct-tree-inorder-level-order-traversals/)
 4. [297. Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/) 
+5. [114. Flatten Binary Tree to Linked List] (https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/)(The disscussion of first solution is super helpful!)
+6. [230. Kth Smallest Element in a BST] (https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/) (Recursive or Iterative or Binary Search)
 
->*A Concise Answer for Serialize and Deserialize BT:*
-	
-```
-public String serialize(TreeNode root) {
-    return serial(new StringBuilder(), root).toString();
-}
-    
-// Generate preorder string
-private StringBuilder serial(StringBuilder str, TreeNode root) {
-    if (root == null) return str.append("#");
-    str.append(root.val).append(",");
-    serial(str, root.left).append(",");
-    serial(str, root.right);
-    return str;
-}
 
+>>*A Concise Answer for 297. Serialize and Deserialize BT:*
+>>
+>> ```
+>> public String serialize(TreeNode root) {
+    return serial(new StringBuilder(), 	root).toString();
+    }
+    // Generate preorder string
+	private StringBuilder serial(StringBuilder str, TreeNode root) {
+	    if (root == null) return str.append("#");
+	    str.append(root.val).append(",");
+	    serial(str, root.left).append(",");
+	    serial(str, root.right);
+	    return str;
+	}
 public TreeNode deserialize(String data) {
     return deserial(new LinkedList<>(Arrays.asList(data.split(","))));
-}
-    
+} 
 // Use queue to simplify position move
 private TreeNode deserial(Queue<String> q) {
     String val = q.poll();
@@ -58,7 +58,6 @@ private TreeNode deserial(Queue<String> q) {
     root.right = deserial(q);
     return root;
 }
-```
+>> ```
 
-5. [114. Flatten Binary Tree to Linked List] (https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/) (The disscussion of first solution is super helpful!)
-6. [230. Kth Smallest Element in a BST] (https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/) (Recursive | Iterative | Binary Search)
+
