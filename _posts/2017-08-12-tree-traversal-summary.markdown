@@ -28,8 +28,8 @@ tags:
 2. [106. Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/description/)
 3. [Construct BT from Inorder and Levelorder traversal](http://www.geeksforgeeks.org/construct-tree-inorder-level-order-traversals/)
 4. [297. Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/) 
-5. [114. Flatten Binary Tree to Linked List] (https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/)(The disscussion of first solution is super helpful!)
-6. [230. Kth Smallest Element in a BST] (https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/) (Recursive or Iterative or Binary Search)
+5. [114. Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/)(The disscussion of first solution is super helpful!)
+6. [230. Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/) (Recursive or Iterative or Binary Search)
 
 
 >*A Concise Answer for 297. Serialize and Deserialize BT:*
