@@ -4,11 +4,12 @@ title:      "Summary of Binary Tree Traversal"
 subtitle:   " \"What info can a certain traversal provides to you?\""
 date:       2017-08-12 12:00:00
 author:     "BoyuanZH"
+header-img: "img/home-bg1.jpg"
 tags:
     - LeetCode
 ---
 
-##Summary of Traversal
+## Summary of Traversal
 
 **What are the infomation a certain traversal provides to you?**
 
