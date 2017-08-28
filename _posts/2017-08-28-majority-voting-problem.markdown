@@ -14,7 +14,7 @@ tags:
 ----
 
 
-# Majority Voting Algorithm  
+## Majority Voting Algorithm ##
 
 
 
