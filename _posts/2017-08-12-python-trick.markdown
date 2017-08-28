@@ -1,4 +1,14 @@
-##Trick Python
+---
+layout:     post
+title:      "Python Tricks"
+date:       2017-08-12 12:00:00
+author:     "BoyuanZH"
+header-img: "img/home-bg1.jpg"
+tags:
+    - Language
+---
+
+## Python Tricks
 
 > **String**
 
@@ -9,3 +19,4 @@
 * ```"a, b, c".split(",")```
 * ```"Total number of col is {} and row is {}".format(1, 2)```
 * 
+

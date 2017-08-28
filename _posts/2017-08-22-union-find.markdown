@@ -4,7 +4,7 @@ title:      "Algorithm: Union Find"
 subtitle:   "Network Connectivity"
 date:       2017-08-22
 author:     "BoyuanZH"
-header-img: "img/post-bg-algorithm.jpg"
+header-img: "img/home-bg1.jpg"
 tags:
     - Leetcode
     - Algorithm
