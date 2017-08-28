@@ -1,13 +1,12 @@
 ---
 layout:     post
 title:      "How to manipulate tree structure?"
-date:       2017-08-12 12:00:00
+date:       2017-08-12
 author:     "BoyuanZH"
 header-img: "img/home-bg1.jpg"
 tags:
     - LeetCode
 ---
-
 
 ## How to manipulate tree structure?
 ```
