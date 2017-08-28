@@ -4,7 +4,6 @@ title:      "Summary of Binary Tree Traversal"
 subtitle:   " \"What info can a certain traversal provides to you?\""
 date:       2017-08-12 12:00:00
 author:     "BoyuanZH"
-header-img: "img/post-bg-2015.jpg"
 tags:
     - LeetCode
 ---
