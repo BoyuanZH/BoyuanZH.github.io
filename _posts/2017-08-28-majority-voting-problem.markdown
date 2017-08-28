@@ -13,9 +13,12 @@ tags:
 
 ----
 
-# Majority Voting Algorithm
 
-Recently I run into this kind of program in leetcode, where you want to know if there exist a value that present in an unsorted list for more than half of the elements in that list, and find it out if certain value exists. It's relatively easy to use a map to reach **O(N) time complexity and O(N) space complexity**. While, how can we reduce the **space complexity to O(1)**?
+# Majority Voting Algorithm  
+
+
+
+Recently I run into this kind of problem in LeetCode, where you want to know if there exist a value that present in an unsorted list for more than half of the elements in that list, and find it out if certain value exists. It's relatively easy to use a map to reach **O(N) time complexity and O(N) space complexity**. While, how can we reduce the **space complexity to O(1)**?
 
 The answer is **Boyer and Moore Majority Voting Algortithm**. Check out [this helpful post](https://gregable.com/2013/10/majority-vote-algorithm-find-majority.html) for understanding the algorithm.
 
