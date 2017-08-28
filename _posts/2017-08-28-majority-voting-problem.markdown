@@ -11,11 +11,9 @@ tags:
     - Study Notes
 ---
 
-----
 
-
-## Majority Voting Algorithm ##
-
+Majority Voting Algorithm
+-------------------------------
 
 
 Recently I run into this kind of problem in LeetCode, where you want to know if there exist a value that present in an unsorted list for more than half of the elements in that list, and find it out if certain value exists. It's relatively easy to use a map to reach **O(N) time complexity and O(N) space complexity**. While, how can we reduce the **space complexity to O(1)**?
