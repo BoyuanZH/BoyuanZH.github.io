@@ -33,9 +33,9 @@ tags:
 
 
 >*A Concise Answer for 297. Serialize and Deserialize BT:*
-
+>  
 > ```
-> public String serialize(TreeNode root) {
+>public String serialize(TreeNode root) {
     return serial(new StringBuilder(), 	root).toString();
     }
 // Generate preorder string
