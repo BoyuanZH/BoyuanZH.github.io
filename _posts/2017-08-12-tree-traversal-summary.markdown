@@ -32,14 +32,14 @@ tags:
 6. [230. Kth Smallest Element in a BST] (https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/) (Recursive or Iterative or Binary Search)
 
 
->>*A Concise Answer for 297. Serialize and Deserialize BT:*
->>
->> ```
->> public String serialize(TreeNode root) {
+>*A Concise Answer for 297. Serialize and Deserialize BT:*
+
+> ```
+> public String serialize(TreeNode root) {
     return serial(new StringBuilder(), 	root).toString();
     }
-    // Generate preorder string
-	private StringBuilder serial(StringBuilder str, TreeNode root) {
+// Generate preorder string
+private StringBuilder serial(StringBuilder str, TreeNode root) {
 	    if (root == null) return str.append("#");
 	    str.append(root.val).append(",");
 	    serial(str, root.left).append(",");
@@ -58,6 +58,6 @@ private TreeNode deserial(Queue<String> q) {
     root.right = deserial(q);
     return root;
 }
->> ```
+> ```
 
 
