@@ -18,5 +18,5 @@ tags:
 * ```"".join([string])```
 * ```"a, b, c".split(",")```
 * ```"Total number of col is {} and row is {}".format(1, 2)```
-* 
+* ```"Total number of col is {} and row is {}".format(*[1, 2])```
 
