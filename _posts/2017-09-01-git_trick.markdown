@@ -1,0 +1,48 @@
+---
+layout:     post
+title:      "Git tricks"
+subtitle:   "Start with: File too large to push."
+date:       2017-09-01
+author:     "BoyuanZH"
+header-img: "img/post-bg-building.jpg"
+tags:
+    - Git
+    - Problem Handling
+    - Study Notes
+---
+
+This post is for recording the problems I encountered with using git and github, and how I resolved those issues.
+
+### File too large to push in remote repo.
+
+The "large file" issue happened when I was dealing with kaggle competition [NY Taxi Trip Duration](https://www.kaggle.com/c/nyc-taxi-trip-duration). With the project folder already built on my laptop, I only need to start a new repo on github and push the local folder on to that. However the pushing failed due to I have these **large data files**. 
+
+Errors are shown:
+
+```
+remote: warning: File data/test.csv is 67.51 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
+remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
+```
+
+Since those data won't need further development, my solution is to **simply ignore** them in my remote repo.
+
+Following steps applied:
+
+```
+git rm -r --cached .
+git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch data/test.csv'
+git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch data/train.csv'
+git push origin master
+```
+
+If you want to reset the remote origin:
+
+```
+git remote set-url https://Taxi_Duration_Prediction.git
+```
+
+For future ignoring the change on those data files, `.gitignore` file was created in the repo, which records name of the folder name to be ignored: `data/`.
+
+
+
+
