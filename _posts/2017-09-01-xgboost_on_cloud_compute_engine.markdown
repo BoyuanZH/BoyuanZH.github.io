@@ -82,6 +82,8 @@ This can be convenient if you are using GCP instance, just use `gsutil` to downl
 ```
 gsutil ls gs://my-awesome-bucket/*
 gsutil cp gs://my-awesome-bucket/cloud-storage-logo.png Desktop
+### copy folders
+gsutil cp -r gs://my-awesome-bucket/cloud-storage-logo.png Desktop
 ```
 
 On AWS instance, just use `wget` to download from the link:
