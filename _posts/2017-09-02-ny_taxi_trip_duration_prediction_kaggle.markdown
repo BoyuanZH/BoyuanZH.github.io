@@ -125,6 +125,23 @@ param_grid = {"eta": [0.05],
               "colsample_bytree": [0.8, 1]}
 scores = xgb_gridsearch(param_grid, xgb_param, dtrain, watchlist, random_sample = False)
 
+##### tranlate the result 2d list to dataframe and store in as csv.
+def score2df(scores):
+    '''
+    type: pd.DataFrame[param: [str({"a":1, "b":2}), str({"a":1, "b":2})], score = [0.3, 0.4]]
+    rtype: pd.DataFrame[columns: param + score]
+    '''
+    from ast import literal_eval
+    scores['param_dict'] = list(map(literal_eval, scores['param']))
+    for key in scores['param_dict'][0].keys():
+        scores[key] = list(map(lambda x: x[key], scores['param_dict']))
+    scores.drop("param_dict", axis = 1)
+    return scores
+    
+search_result = pd.Series(dict(scores)).reset_index()
+search_result.columns = ["param", "score"]
+search_result.to_csv("search_result.csv", index = False)
+
 ```
 
 > The helper function takes in a whole lot of default arguments as one may notice. I did this because the `multiprocessing.Pool.map()` function require the function argement it takes in to be picklable. By doing what I did, just pass in the `comb_list` as the parameter list is enough, no need to pickle `dtrain`, `watchlist`, etc..
