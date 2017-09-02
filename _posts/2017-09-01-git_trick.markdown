@@ -43,6 +43,13 @@ git remote set-url https://Taxi_Duration_Prediction.git
 
 For future ignoring the change on those data files, `.gitignore` file was created in the repo, which records name of the folder name to be ignored: `data/`.
 
+---
 
+### Ignore current untrack file
 
+If you want permenantly ignore current untrack file:
+
+```
+git status --porcelain | grep '^??' | cut -c4- >> .gitignore
+```
 
