@@ -22,3 +22,5 @@ Very helpful and insightful course. Strong recommendation.
 <img class="shadow" width="500" src="/img/in-post/2018-08-22/2018-08-22-variable-relationship-table.jpg" />
 <small class="img-hint">A summary table from the last lecture illustrating four types of variable relationships. </small>
 
+> Classic Interview Questions:
+> 1. [Airplane Boarding](https://math.stackexchange.com/questions/5595/taking-seats-on-a-plane)
