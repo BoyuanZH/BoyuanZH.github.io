@@ -215,7 +215,7 @@ def preorderTraversal(self, root):
 **Recursive version** of Postorder Traversal
 
 ```
-def preorderTraversal(self, root):
+def postorderTraversal(self, root):
     if root == None: return []
     return self.inorderTraversal(root.left) + self.inorderTraversal(root.right) + root.val
 ```
