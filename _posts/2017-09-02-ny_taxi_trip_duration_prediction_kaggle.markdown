@@ -26,7 +26,7 @@ After feature engineering, the model performance can be improved efficiently thr
 
 [Full list of parameters for Xgboost](https://github.com/dmlc/xgboost/blob/master/doc/parameter.md)
 
-1. **eta:** smaller `eta` is paired with larger ` num_boost_round`. I prefer first fix `num_boost_round = 2000`, using `early_stopping_rounds = 10` to grid search for the optimal `eta`. 
+1. **eta:** smaller `eta` is paired with larger `num_boost_round`. I prefer first fix `num_boost_round = 2000`, using `early_stopping_rounds = 10` to grid search for the optimal `eta`. 
 2. min\_child\_weight
 2. max_depth
 3. subsample
