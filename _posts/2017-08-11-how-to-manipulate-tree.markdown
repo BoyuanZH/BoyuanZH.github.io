@@ -58,7 +58,7 @@ def isSymPair(self, n1, n
         return self.isSymPair(n1.left, n2.right) and self.isSymPair(n1.right, n2.left)
 ```
 
-##Optimization
+## Optimization
 
 **Inorder Successor in BST:**
 
@@ -136,7 +136,7 @@ def closestValue(self, root, target):
         root = root.left if target < root.val else root.right
     return min(path[::-1], key=lambda x: abs(target - x))
 ```
-##The essence of recursion: Stack (Tree Traversal)
+## The essence of recursion: Stack (Tree Traversal)
 
 IF necessary, also check [this version of TreeTraversal](https://leetcode.com/problems/binary-tree-postorder-traversal/discuss/).
 
