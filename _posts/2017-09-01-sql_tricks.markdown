@@ -42,3 +42,4 @@ SELECT
 
 This may imply the way sql server handling `@variable` is different from normal database columns.
 
+1. `Right(Name, 3)` : Select the last three digits of Name string.

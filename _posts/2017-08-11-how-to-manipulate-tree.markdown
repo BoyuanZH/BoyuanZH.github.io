@@ -170,6 +170,24 @@ def inorderTraversal(self, root):
                 curr = curr.left
     return result
 ```
+
+Iterative version can be optimized as follow:
+
+```
+def inorderTraversal(self, root):
+    curr = root
+    stack = []
+    res = []
+    while not (curr == None and stack == []):
+        while not curr == None:
+            stack.append(curr)
+            curr = curr.left
+        curr = stack.pop()
+        res.append(curr.val)
+        curr = curr.right
+    return res
+```
+
 ---
 **Recursive version** of Preorder Traversal
 
@@ -187,8 +205,7 @@ def preorderTraversal(self, root):
     result = []
     stack = [root]
     while (not stack == []):
-        curr = stack[-1]
-        stack = stack[:-1]
+        curr = stack.pop(-1)
         result.append(curr.val)
         if not curr.right == None: stack.append(curr.right)
         if not curr.left == None: stack.append(curr.left)
@@ -211,8 +228,7 @@ def postorderTraversal(self, root):
     stack = [root]
     result = []
     while not stack == []:
-        curr = stack[-1]
-        stack = stack[:-1]
+        curr = stack.pop(-1)
         result = [curr.val] + result
         if not curr.left == None: stack.append(curr.left)
         if not curr.right == None: stack.append(curr.right)

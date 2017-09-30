@@ -19,4 +19,15 @@ tags:
 * ```"a, b, c".split(",")```
 * ```"Total number of col is {} and row is {}".format(1, 2)```
 * ```"Total number of col is {} and row is {}".format(*[1, 2])```
+* ```setA.issubset(setB)```
+    * Wrong: setA in setB
 
+* ```"%d:%02d" % (h, m)```, output is in format of `"2:05"`
+* Python has no built-in `right logic shift`, customized a logic right shift as follow:
+
+    ```
+    def rshift(num, x):
+            if num >= 0: return num >> x
+            if num < 0: return (num + 0x100000000) >> x
+    ```
+* 
