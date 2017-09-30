@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Study Note: Shell Scripting"
-date:       2017-09-010
+date:       2017-09-10
 author:     "BoyuanZH"
 header-img: "img/post-bg-building.jpg"
 tags:

@@ -2,7 +2,7 @@
 layout:     post
 title:      "Kadane's Algorithm: Maximum Subarray Problem"
 subtitle:   "Like a Dynamical Programming"
-date:       2017-09-01
+date:       2017-09-19
 author:     "BoyuanZH"
 header-img: "img/post-bg-building.jpg"
 tags:
