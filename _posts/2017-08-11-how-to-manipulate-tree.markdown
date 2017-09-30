@@ -23,7 +23,7 @@ def connect(self, root):
 ```
 Above is a elegent solution for [LC117: Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/description/). For me, it is still hard to manipulate elegent **pointers** in the iterative problem of Tree structure.
 
-**Another example of using queue in a traverse a tree:**
+**Another example of using queue in a traverse a tree:** [101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree/description/)
 
 ```
 def isSymmetric(self, root):
