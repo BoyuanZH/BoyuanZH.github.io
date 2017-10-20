@@ -24,6 +24,7 @@ tags:
 > 4. [198. House Robber](https://leetcode.com/problems/house-robber/description/)
 > 5. [213. House Robber II](https://leetcode.com/problems/house-robber-ii/description/)
 > 6. [276. Paint Fence](https://leetcode.com/problems/paint-fence/discuss/)
+> 7. [312. Burst Balloons](https://leetcode.com/problems/burst-balloons/description/) (Similar Problem: [Matrix Chain Multiplication](http://practice.geeksforgeeks.org/problems/matrix-chain-multiplication/0))
 > 
 > 
 > 
@@ -45,7 +46,6 @@ tags:
 > Problem using factors:
 > 
 > 1. [172. Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/description/)
-> 2. 
 > 
 > Prolbem using elegant pointer solution:
 > 
@@ -136,7 +136,6 @@ tags:
 >Design Problem:
 >
 >1. [170. Two Sum III - Data structure design](https://leetcode.com/problems/two-sum-iii-data-structure-design/description/)
->2. []()
 >
 > Problem might fool you:
 > 
@@ -165,4 +164,3 @@ tags:
 > Elegant Solution:
 > 
 > 1. [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/)
-> 2. 
