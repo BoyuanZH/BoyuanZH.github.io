@@ -31,4 +31,4 @@ tags:
 +----------+--------------------+
 	```
 
-2. 
+2. The ```mapValues``` **(only applicable on pair RDD)** transformation is like a map (can be applied on any RDD) transform but it has one difference that when we apply map transform on pair RDD we can access the key and value both of this RDD but in case of “mapValues” transformation, it will transform the values by applying some function and key will not be affected.
