@@ -9,7 +9,7 @@ tags:
 ---
 
 ## How to manipulate tree structure?
-```
+```python
 def connect(self, root):
     while (not root == None):
         preRoot = TreeLinkNode(0)
@@ -25,7 +25,7 @@ Above is a elegent solution for [LC117: Populating Next Right Pointers in Each N
 
 **Another example of using queue in a traverse a tree:** [101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree/description/)
 
-```
+```python
 def isSymmetric(self, root):
     # iteration
     if root == None: return True
@@ -44,7 +44,7 @@ def isSymmetric(self, root):
 
 Recursive Solution:
 
-```
+```python
 def isSymmetric(self, root):
     ## recursion
     return root == None or self.isSymPair(root.left, root.right)
@@ -63,7 +63,7 @@ def isSymPair(self, n1, n
 **Inorder Successor in BST:**
 
 
-```
+```python
 def inorderSuccessor(self, root, p):
     s = None
     curr = root
@@ -82,10 +82,10 @@ def inorderSuccessor(self, root, p):
 def findMin(self, node):
     if node.left == None: return node
     return self.findMin(node.left)
-```     
+```
 This [285. Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst/discuss/) can be optimized as follow:
 
-```
+```python
 def inorderSuccessor(self, root, p):
 	succ = None
 	while root:
@@ -101,7 +101,7 @@ def inorderSuccessor(self, root, p):
 
 **Closet BST Value**
 
-```
+```python
 def closestValue(self, root, target):
     if (root == None): return None;
     curr = root
@@ -118,7 +118,7 @@ def closestValue(self, root, target):
 
 This [270. Closest Binary Search Tree Value](https://leetcode.com/problems/closest-binary-search-tree-value/discuss/) can be optimized as follow:
 
-```
+```python
 def closestValue(self, root, target):
     closest = root.val
     while root:
@@ -128,7 +128,7 @@ def closestValue(self, root, target):
 ```
 Following answer is good for understanding the problem， O(N) space.
 
-```
+```python
 def closestValue(self, root, target):
     path = []
     while root:
@@ -143,14 +143,14 @@ IF necessary, also check [this version of TreeTraversal](https://leetcode.com/pr
 ---
 **Recursive version** of Inorder Traversal
 
-```
+```python
 def inorderTraversal(self, root):
     if root == None: return []
     return self.inorderTraversal(root.left) + [root.val] + self.inorderTraversal(root.right)
 ```
 **Iterative version** of Inorder Traversal
 
-```
+```python
 def inorderTraversal(self, root):
     if root == None: return []
     result = []
@@ -173,7 +173,7 @@ def inorderTraversal(self, root):
 
 Iterative version can be optimized as follow:
 
-```
+```python
 def inorderTraversal(self, root):
     curr = root
     stack = []
@@ -191,7 +191,7 @@ def inorderTraversal(self, root):
 ---
 **Recursive version** of Preorder Traversal
 
-```
+```python
 def preorderTraversal(self, root):
     if root == None: return []
     return [root.val] + self.inorderTraversal(root.left) + self.inorderTraversal(root.right)
@@ -199,7 +199,7 @@ def preorderTraversal(self, root):
 
 **Iterative version** of Preorder Traversal
 
-```
+```python
 def preorderTraversal(self, root):
     if root == None: return []
     result = []
@@ -214,7 +214,7 @@ def preorderTraversal(self, root):
 ---
 **Recursive version** of Postorder Traversal
 
-```
+```python
 def postorderTraversal(self, root):
     if root == None: return []
     return self.inorderTraversal(root.left) + self.inorderTraversal(root.right) + root.val
@@ -222,7 +222,7 @@ def postorderTraversal(self, root):
 
 **Iterative version** of Postorder Traversal
 
-```
+```python
 def postorderTraversal(self, root):
     if root == None: return []
     stack = [root]
@@ -240,7 +240,7 @@ def postorderTraversal(self, root):
 
 My Solution:
 
-```
+```python
 def levelOrder(self, root):
     """
     :type root: TreeNode
@@ -268,7 +268,7 @@ def levelOrder(self, root):
 
 A conciser solution from [this post](https://discuss.leetcode.com/topic/26402/5-6-lines-fast-python-solution-48-ms/2).
 
-```
+```python
 def levelOrder(self, root):
     if not root:
         return []
@@ -284,7 +284,7 @@ def levelOrder(self, root):
 
 Can be further boiled down:
 
-```
+```python
 def levelOrder(self, root):
     ans, level = [], [root]
     while root and level:
@@ -295,7 +295,7 @@ def levelOrder(self, root):
 
 or:
 
-```
+```python
 def levelOrder(self, root):
     ans, level = [], [root]
     while root and level:
