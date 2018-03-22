@@ -32,3 +32,16 @@ tags:
 	```
 
 2. The ```mapValues``` **(only applicable on pair RDD)** transformation is like a map (can be applied on any RDD) transform but it has one difference that when we apply map transform on pair RDD we can access the key and value both of this RDD but in case of “mapValues” transformation, it will transform the values by applying some function and key will not be affected.
+	
+	Example: Following two expression has same output.
+	
+	```
+	rdd3_mapped.reduceByKey(lambda x,y: x+y)
+	```
+	```
+	rdd3_mapped.groupByKey().mapValues(sum)
+	```
+	
+	**Here in `groupByKey` transformation lot of shuffling in the data is required to get the answer, so it is better to use `reduceByKey` in case of large shuffling of data.**
+	
+3. 
