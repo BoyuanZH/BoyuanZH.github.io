@@ -12,4 +12,7 @@ tags:
 
 ## Resources:
 1. [Python & C#](https://www.codeproject.com/articles/657698/python-visual-studio-and-csharp-so-sweet)
+2. [Pluralsight Course: Developing with .NET on Microsoft Azure - Getting Started](https://app.pluralsight.com/library/courses/developing-dotnet-microsoft-azure-getting-started/table-of-contents)
+3. ​
+
 
